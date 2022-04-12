@@ -1,0 +1,38 @@
+/* THEME */
+
+.theme-dark {
+  --background-primary: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+  --background-tertiary: #000000;
+  --background-floating: #030303;
+  --scrollbar-auto-track: #141414;
+  .peopleColumn-1wMU14 {background-color: var(--background-primary);}
+  .peopleList-2VBrVI {background-color: var(--background-primary);}
+  .embedWrapper-1MtIDg.embedFull-1HGV2S.embed-hKpSrO.markup-eYLPri {background-color: #0a0a0a;}
+  .autocomplete-3NRXG8 {background-color: var(--background-floating);}
+  .selected-3H3-RC {background-color: #0f0f0f;}
+  .container-18GwIk {background-color: var(--background-floating);}
+  .header-3_zmOb {background-color: var(--background-floating);}
+  .header-1w9Q93 {background-color: var(--background-floating);}
+  .messagesPopoutWrap-3zryHW {background-color: var(--background-floating);}
+  .root-g14mjS {background-color: var(--background-floating);}
+  .message-G6O-Wv {background-color: var(--background-floating);}
+  .footer-31IekZ {background-color: var(--background-floating);}
+}
+/* Fix Search Theming */
+.theme-dark {
+.container-2McqkF {background-color: var(--background-floating);}
+.option-ayUoaq:after {background: var(--background-floating);}
+.option-2KkUJO .searchOption-351dTI {background-color: var(--background-tertiary);}
+.option-2KkUJO.selected-rZcOL- {background-color: var(--background-tertiary);}
+.option-2KkUJO.selected-rZcOL-:after {width: 0px;}
+.option-2KkUJO::after {background: none;}
+.searchLearnMore-1gNL3A {display: none;}
+.focused-2FU0YH {background-color: var(--background-floating);}
+.wrapper-1ZcZW- {background: #0e0e0e;}
+}
+
+/* Dark Bot Tags */
+.botTagRegular-kpctgU {transition: .5s; background: rgba(30,0,27,0.1); color: #ffffff;}
+.botTagRegular-kpctgU:hover {transition: .5s; background: #444444; color: #ffffff;}

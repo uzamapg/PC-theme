@@ -1,0 +1,16 @@
+/* HIDE STUFF */
+.powercord-spotify .flex-2S1XBF {display: none;}
+.buttons-uaqb-5 {opacity: 0; transition: opacity 0.1s;}
+.channelTextArea-1FufC0:hover .buttons-uaqb-5 {opacity: 1.0;}
+.container-16j22k {display: none;}
+.container-YkUktl{background-color: var(--background-secondary);}
+.isUnread-3Lojb- {border-color:transparent !important;}
+.anchor-1MIwyf[href="https://support.discord.com"] { display: none; }
+  /*- User-popout -*/
+.note-1MiCN7 textarea, .note-Go5ZP2 textarea, .note-3M15gE, .userInfoSectionHeader-2mYYun:last-of-type {display: none;}
+.bodyInnerWrapper-2bQs1k>h3:nth-of-type(2) {display: none;}
+.divider-1wtgZ3 {display: none;}
+.footer-k0JFJ6 {display: none;}
+  /*- Settings -*/
+.socialLinks-3ywLUf {display: none;}
+.developerPortalCtaWrapper-2XNafh {display: none;}

@@ -1,0 +1,6 @@
+/* Modern / Cozier Replies */
+.compact-2Nkcau {--reply-message-margin: 10px;}
+.repliedMessage-3Z6XBG {background-color: var(--background-secondary); border-radius: 5px; padding: 5px 10px; transition: 300ms background-color; width: min-content; max-width: 800px;}
+.repliedMessage-3Z6XBG:hover {background-color: var(--background-modifier-hover);}
+.repliedMessage-3Z6XBG:active {background-color: var(--background-modifier-active);}
+.repliedMessage-3Z6XBG::before {margin-right: var(--reply-message-margin);}
