@@ -1,0 +1,17 @@
+/* Compact Plugins List */
+.powercord-product {padding: 10px 0 !important; margin: 0 !important; background: none !important; border: none !important; display: flex; flex-wrap: wrap; margin-bottom: 10px; border-bottom: thin solid var(--background-modifier-accent) !important; border-radius: 0;}
+.powercord-product-header {margin: 0 !important; order: -2; flex: 1 1 60%;}
+.powercord-product-details {width: 100%;}
+.powercord-product .description, .powercord-product .metadata, .powercord-product-permissions {margin: 0 !important; margin-top: 6px !important; color: var(--header-secondary); font-size: 14px;}
+.powercord-product .metadata .author {flex-grow: 1;}
+.powercord-product .metadata .license {justify-content: flex-end; width: auto !important; margin-left: 20px !important;}
+.powercord-product .metadata .version {width: 105px !important; order: 2; justify-content: flex-end;}
+.powercord-product .metadata .version > div {margin-right: 0 !important;}
+.powercord-product .metadata .version > div:first-child,
+.powercord-product .metadata .license > div:first-child {order: 2; margin-right: 0 !important; margin-left: 5px !important;}
+.powercord-product .metadata .license > div:last-child,
+.powercord-product .metadata .author > div:first-child {margin-right: 4px !important;}
+.powercord-product-footer {margin: 0 !important; order: -1; margin-left: 6px !important;}
+.powercord-product-footer .lookFilled-1Gx00P.colorRed-1TFJan {border-radius: 100px; padding: 0 !important; height: 24px !important; min-height: unset !important; min-width: unset !important; padding: 0 8px !important;}
+.powercord-product .dividerDefault-3C2-ws,
+.powercord-product .description > div:first-child { display: none;}
