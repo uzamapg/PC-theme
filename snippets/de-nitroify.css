@@ -1,0 +1,25 @@
+*[data-item-id='DiscordNitro'] {display: none !important;}
+*[data-item-id="NitroServerBoost"] {display: none !important;}
+*[data-item-id="Subscriptions"] {display: none !important;}
+*[data-item-id="LibraryInventory"] {display: none !important;}
+*[data-item-id="Billing"] {display: none !important;}
+.item-3XjbnG[data-item-id="Connections"] + .separator-2wx7h6 + .header-2Kx1US {display: none !important;}
+.item-3XjbnG[data-item-id="Connections"] + .separator-2wx7h6 {display: none !important;}
+.button-f2h6uQ[aria-label='Send a gift'] {display: none !important;}
+#guild-header-popout-premium-subscribe {display: none;}
+[href="/store"], [aria-controls="Discord Nitro-tab"],[aria-controls="Billing-tab"],[aria-controls="nitro-server-oost-tab"],
+#guild-header-popout > div > .separator-1So4YB:nth-child(2),.shinyButton-2Q9MDB,
+.emojiSection-3QtaWO > .flex-2S1XBF > .size14-3fJ-ot,.emojiSection-3QtaWO > .flex-2S1XBF > .flex-2S1XBF > .size14-3fJ-ot,
+.emptyStateSubtext-1nMe5m, .content-374sTA, .wrapper-1hrFc0, .wrapper-3nSjSv, .divider-Uf0Wob,
+.perksModalContentWrapper-2HU6uL > .content-2qfHzC:nth-child(3),.guildsBlurb-1fFvov,.marketingHeader-27aoGA,
+.content-11k50x > div:not(.marketingLogo-pyU32f), .content-11k50x > h3,.subscribeTooltipWrapper-3ipXtC,
+.headerBlurb-1GxBrq,.giftAction-yhDLaW,.tierMarkerLabelContainer-1bRYay, .upsell-103Jee,
+.premiumPromo-1eKAIB,.stickerShopIconWrapper-2SZmQ6,.selectorButtonPremiumRequired-2pGGEj,.premiumUpsell-2K2V_c { display: none;}
+.emojiSection-3QtaWO > .flex-2S1XBF, .popoutContainer-2wbmiM > .flex-2S1XBF { flex-direction: column; align-items: center;}
+.emojiSection-3QtaWO > .flex-2S1XBF > .flex-2S1XBF,
+.popoutContainer-2wbmiM > .flex-2S1XBF > .flex-2S1XBF { margin-left: 0px; }
+.primaryEmoji-2Og_xG { margin: 0px 0px 12px 0; }
+.popoutContainer-2wbmiM { width: auto; }
+.ctaBar-2UsjF2 { margin: auto;}
+.wrapper-1NB3WY > .header-uVCAlo > .wrapper-22ayhK { padding-right: 0;}
+.settingsGroup-1Zsrah .item-3T2z1R:nth-child(2) { border-radius: 0 3px 3px 0;b
