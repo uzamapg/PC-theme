@@ -7,20 +7,23 @@
   --background-tertiary: #000000;
   --background-floating: #030303;
   --scrollbar-auto-track: #141414;
-  .peopleColumn-1wMU14 {background-color: var(--background-primary);}
-  .peopleList-2VBrVI {background-color: var(--background-primary);}
-  .embedWrapper-1MtIDg.embedFull-1HGV2S.embed-hKpSrO.markup-eYLPri {background-color: #0a0a0a;}
-  .autocomplete-3NRXG8 {background-color: var(--background-floating);}
-  .selected-3H3-RC {background-color: #0f0f0f;}
-  .container-18GwIk {background-color: var(--background-floating);}
-  .header-3_zmOb {background-color: var(--background-floating);}
-  .header-1w9Q93 {background-color: var(--background-floating);}
-  .messagesPopoutWrap-3zryHW {background-color: var(--background-floating);}
-  .root-g14mjS {background-color: var(--background-floating);}
-  .message-G6O-Wv {background-color: var(--background-floating);}
-  .footer-31IekZ {background-color: var(--background-floating);}
-  .container-2cd8Mz {background-color: var(--background-secondary);}
 }
+
+ .theme-dark .container-2cd8Mz {background-color: var(--background-secondary);}
+ .theme-dark .peopleColumn-1wMU14 {background-color: var(--background-primary);}
+ .theme-dark .peopleList-2VBrVI {background-color: var(--background-primary);}
+ .theme-dark .embedWrapper-1MtIDg.embedFull-1HGV2S.embed-hKpSrO.markup-eYLPri {background-color: #0a0a0a;}
+ .theme-dark .autocomplete-3NRXG8 {background-color: var(--background-floating);}
+ .theme-dark .selected-3H3-RC {background-color: #0f0f0f;}
+ .theme-dark .container-18GwIk {background-color: var(--background-floating);}
+ .theme-dark .header-3_zmOb {background-color: var(--background-floating);}
+ .theme-dark .header-1w9Q93 {background-color: var(--background-floating);}
+ .theme-dark .messagesPopoutWrap-3zryHW {background-color: var(--background-floating);}
+ .theme-dark .root-g14mjS {background-color: var(--background-floating);}
+ .theme-dark .message-G6O-Wv {background-color: var(--background-floating);}
+ .theme-dark .footer-31IekZ {background-color: var(--background-floating);}
+
+
 /* Fix Search Theming */
 .theme-dark {
 .container-2McqkF {background-color: var(--background-floating);}
