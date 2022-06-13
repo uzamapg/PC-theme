@@ -6,6 +6,7 @@
 .container-YkUktl{background-color: var(--background-secondary);}
 .isUnread-3Lojb- {border-color:transparent !important;}
 .anchor-1MIwyf[href="https://support.discord.com"] { display: none; }
+.threadSuggestionBar-3ExSyc { display: none; }
   /*- User-popout -*/
 .note-1MiCN7 textarea, .note-Go5ZP2 textarea, .note-3M15gE, .userInfoSectionHeader-2mYYun:last-of-type {display: none;}
 .bodyInnerWrapper-2bQs1k>h3:nth-of-type(2) {display: none;}
