@@ -22,6 +22,7 @@
  .theme-dark .root-g14mjS {background-color: var(--background-floating);}
  .theme-dark .message-G6O-Wv {background-color: var(--background-floating);}
  .theme-dark .footer-31IekZ {background-color: var(--background-floating);}
+ .modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ {background-color: var(--background-floating);}
 
 
 /* Fix Search Theming */
