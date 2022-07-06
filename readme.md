@@ -5,3 +5,6 @@ For snippets:
 
 For themes:
 ``` @import url("https://uzamapg.github.io/PC-theme/simple-themes/**filename**.css");```
+
+None of the snippets are made by me apart from some stuff in the hide-stuff.css. 
+All the stuff is found in the Powercord Discord server.
