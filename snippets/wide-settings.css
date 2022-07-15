@@ -15,3 +15,8 @@
 .baseLayout-8AMrwn > :first-child {
   width: 100%;
 }
+
+/* Other wide stuff */
+.messagesPopoutWrap-3zryHW{
+  width: 620px;
+}
