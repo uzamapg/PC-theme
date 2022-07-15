@@ -13,3 +13,17 @@ body {--font-display: var(--font-primary);}
 .scroller-3X7KbA {background-color: var(--background-secondary);}
 /* Don't truncate About Me to six lines */
 .clamped-2ZePhX {-webkit-line-clamp: unset;}
+
+/* Fix PC stuff order in settings */
+.side-2ur1Qk> div[data-item-id="pc-updater"],
+.side-2ur1Qk> div[data-item-id="pc-updater"] ~ div { order: 6 }
+
+.side-2ur1Qk> div[data-item-id="pc-moduleManager-plugins"] { order: 1 !important; }
+.side-2ur1Qk> div[data-item-id="pc-moduleManager-themes"] { order: 2 !important; }
+.side-2ur1Qk> div[data-item-id="theme-toggler"] { order: 5 !important; }
+.side-2ur1Qk> div[data-item-id="css-toggler"] { order: 4 !important; }
+.side-2ur1Qk> div[data-item-id="bdCompat"] { order: 3 !important; }
+.item-3XjbnG[data-item-id="pc-updater"] {
+    align-items: unset !important;
+    overflow: visible;
+}
