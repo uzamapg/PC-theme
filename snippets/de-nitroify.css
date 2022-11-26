@@ -25,3 +25,9 @@
 .settingsGroup-1Zsrah .item-3T2z1R:nth-child(2) { border-radius: 0 3px 3px 0;}
 .button[aria-label="Send a gift or Boost this server"] {display: none;}
 .root-5HCxlS root-g14mjS .fullscreenOnMobile-ixj0e3 {display: none;}
+
+.button[aria-label="Nitro"] {display: none;}
+.button[aria-label="Server Boost"] {display: none;}
+.button[aria-label="Subscriptions"] {display: none;}
+.button[aria-label="Gift Inventory"] {display: none;}
+.button[aria-label="Billing"] {display: none;}
