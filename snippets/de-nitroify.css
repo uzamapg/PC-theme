@@ -1,7 +1,7 @@
-*[data-item-id='DiscordNitro'] {display: none !important;}
-*[data-item-id="NitroServerBoost"] {display: none !important;}
+*[data-item-id='Nitro'] {display: none !important;}
+*[data-item-id="Server Boost"] {display: none !important;}
 *[data-item-id="Subscriptions"] {display: none !important;}
-*[data-item-id="LibraryInventory"] {display: none !important;}
+*[data-item-id="Gift Inventory"] {display: none !important;}
 *[data-item-id="Billing"] {display: none !important;}
 .item-3XjbnG[data-item-id="Connections"] + .separator-2wx7h6 + .header-2Kx1US {display: none !important;}
 .item-3XjbnG[data-item-id="Connections"] + .separator-2wx7h6 {display: none !important;}
