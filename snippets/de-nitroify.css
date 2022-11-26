@@ -4,8 +4,6 @@
 //*[data-item-id="Gift Inventory"] {display: none !important;}
 //*[data-item-id="Billing"] {display: none !important;}
 *//
-.item-3XjbnG[data-item-id="Connections"] + .separator-2wx7h6 + .header-2Kx1US {display: none !important;}
-.item-3XjbnG[data-item-id="Connections"] + .separator-2wx7h6 {display: none !important;}
 .button-f2h6uQ[aria-label='Send a gift'] {display: none !important;}
 #guild-header-popout-premium-subscribe {display: none;}
 [href="/store"], [aria-controls="Discord Nitro-tab"],[aria-controls="Billing-tab"],[aria-controls="nitro-server-oost-tab"],
@@ -28,7 +26,9 @@
 .root-5HCxlS root-g14mjS .fullscreenOnMobile-ixj0e3 {display: none;}
 
 [aria-label="Nitro"] {display: none;}
-[aria-label="Server Boost"] {display: none;}
 [aria-label="Subscriptions"] {display: none;}
 [aria-label="Gift Inventory"] {display: none;}
-[aria-label="Billing"] {display: none;}
+
+
+.upsellVisible-evDwII, .upsell-27kXsw {display: none;}
+.premiumIconWrapper-yyGDql {display: none;}
