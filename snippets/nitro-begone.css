@@ -4,9 +4,9 @@
 [class^="premiumIconWrapper"], /* Nitro Icon in top right on Banners */
 [class^="characterCount-"] [class*="upsell-"], /* "Send longer Messages with Discord Nitro!" */
 [class^="emojiSection-"] [class*="shinyButton-"] /* "Get Nitro" button in Emoji/Sticker modal" */
-[aria-label="Nitro"],
-[aria-label="Subscriptions"],
-[aria-label="Gift Inventory"],
 {
     display: none !important;
 }
+[aria-label="Nitro"] {display: none;}
+[aria-label="Subscriptions"]  {display: none;}
+[aria-label="Gift Inventory"]  {display: none;}
