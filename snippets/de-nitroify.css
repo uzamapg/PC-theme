@@ -25,9 +25,9 @@
 .button[aria-label="Send a gift or Boost this server"] {display: none;}
 .root-5HCxlS root-g14mjS .fullscreenOnMobile-ixj0e3 {display: none;}
 
-[aria-label="Nitro"] {display: none;}
-[aria-label="Subscriptions"] {display: none;}
-[aria-label="Gift Inventory"] {display: none;}
+*[aria-label="Nitro"] {display: none;}
+*[aria-label="Subscriptions"] {display: none;}
+*[aria-label="Gift Inventory"] {display: none;}
 
 
 .upsellVisible-evDwII, .upsell-27kXsw {display: none;}
