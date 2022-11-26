@@ -7,6 +7,6 @@
 {
     display: none !important;
 }
-[aria-label="Nitro"] {display: none;}
-[aria-label="Subscriptions"]  {display: none;}
-[aria-label="Gift Inventory"]  {display: none;}
+*[aria-label="Nitro"] {display: none;}
+*[aria-label="Subscriptions"]  {display: none;}
+*[aria-label="Gift Inventory"]  {display: none;}
