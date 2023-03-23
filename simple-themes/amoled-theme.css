@@ -42,3 +42,9 @@
 /* Dark Bot Tags */
 .botTagRegular-kpctgU {transition: .5s; background: rgba(30,0,27,0.1); color: #ffffff;}
 .botTagRegular-kpctgU:hover {transition: .5s; background: #444444; color: #ffffff;}
+
+/* Forum pages theme fix */
+.theme-dark .themed-Hp1KC_ {background: var(--background-primary);}
+.grid-21dB-S>div:first-child, .headerRow-1MKoR-, .list-3FIpnh>div:first-child {background: var(--background-primary);}
+.container-1PloNW {background: var(--background-floating);}
+.container-ZMc96U {background: var(--background-primary);}
