@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "TwemojiColor";
+    src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf");
+}
+:root {
+    --font-primary: "gg sans", sans-serif, "TwemojiColor";
+}
