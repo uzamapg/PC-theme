@@ -1,7 +1,32 @@
 /* Rectangular Message box/ Chat Box */
-.channelTextArea-1FufC0 { margin-bottom: 0; }
-.form-3gdLxP { padding: 0; }
-.inner-NQg18Y { padding-top: 4px; }
-.base-3bcbY3 { /* typing and slowmode stuff */top: -24px; /* height is 24px */ background-color: var(--background-primary);}
-.scrollableContainer-15eg7h {border-radius: 0px; min-height: 53px;}
-.scrollableContainer-15eg7h{background-color: transparent !important;}
+/*.channelTextArea-1FufC0 { margin-bottom: 0; }
+/*.form-3gdLxP { padding: 0; }
+/*.inner-NQg18Y { padding-top: 4px; }
+/*.base-3bcbY3 { /* typing and slowmode stuff */top: -24px; /* height is 24px */ background-color: var(--background-primary);}
+/*.scrollableContainer-15eg7h {border-radius: 0px; min-height: 53px;}
+/*.scrollableContainer-15eg7h{background-color: transparent !important;}
+*/
+
+
+/* Match channel text area to user container */
+.form__13a2c {padding: 0;}
+.channelTextArea__2e60f {margin: 0;}
+.scrollableContainer__33e06 {border-radius: 0;}
+.inner__9fd0b {
+  min-height: 48px;
+  padding-top: 4px;
+}
+/* Move typing indicators */
+.typing__6fd1d {
+  top: -24px;
+  left: 0px;
+  width: fit-content;
+  padding-right: 9px;
+  border-radius: 0 8px 0 0;
+  background: var(--bg-overlay-3,var(--channeltextarea-background));
+}
+/* Remove single pixel padding from user container */
+.container_ca50b9 {
+  margin: 0;
+}
+/* End Match channel text area to user container */
