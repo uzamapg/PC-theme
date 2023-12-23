@@ -1,13 +1,13 @@
  /* Wide Settings */
  [class^="sidebarRegion__"] {
-        max-width: 220px;
+        max-width: 250px;
         max-height: 100%;
     }
     [class^="contentRegion__"] {
         height: 100%;
     }
     [class^="layer__"]:nth-child(2) [class^="sidebar"] {
-        max-width: 200px;
+        max-width: 225px;
         padding: 1;
     }
     [class^="standardSidebarView__"] {
@@ -20,7 +20,51 @@
         padding: 2;
     }
 
+/* Hover Animations for sidebar */
+ [class*="baseLayer__"] {
+        opacity: 1 !important;
+        z-index: 1;
+        transform: none !important;
+        /*will-change: filter, scale !important;*/
+        transition-property: filter, scale;
+        transition-duration: var(--Flashcord-TransMult-Normal, 250ms);
+    }
+    [class^="layers__"]:has([class^="standardSidebarView__"]:hover) .baseLayer__8fda3 { /* [!] FC-Wildcard_PerfNuker */
+        filter: blur(var(--Flashcord-Blur-Medium, 8px)) brightness(var(--FlashCore-Brightness,0.9));
+        scale: 0.98;
+    }
+    [class^="layers__"]:has([class^="closeButton__"]:hover) .baseLayer__8fda3 { /* [!] FC-Wildcard_PerfNuker */
+        filter: blur(var(--Flashcord-Blur-Light, 2px)) brightness(0.98);
+        scale: 1;
+    }
+    [class^="closeButton__"]:hover {
+        background: transparent;
+        opacity: 0;
+        /*will-change: opacity;*/
+    }
 
+    [class^="sidebar__"] [class^="item__"] {
+        max-width: 180px;
+        border-radius: var(--Flashcord-Border_Radius, 25px) !important;
+        translate: 5px;
+        transition-property: translate, scale;
+        transition-duration: var(--Flashcord-TransMult-Fast, 125ms);
+    }
+    [class^="sidebar__"] [class^="item__"]:hover {
+        translate: 15px;
+        scale: 1.05;
+        /*will-change: translate, scale;*/
+    }
+    [class^="sidebar__"] [class^="item__"]:active {
+        translate: 15px;
+        scale: 1;
+        /*will-change: translate, scale;*/
+    }
+    [class^="sidebar__"] [class*="selected__"] {
+        translate: 15px;
+        scale: 1.025;
+        /*will-change: translate, scale;*/
+    }
 
 
 
