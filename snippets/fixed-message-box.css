@@ -23,7 +23,7 @@
   width: fit-content;
   padding-right: 9px;
   border-radius: 0 8px 0 0;
-  background: var(--bg-overlay-3,var(--channeltextarea-background));
+  background: var(--background-floating);
 }
 /* Remove single pixel padding from user container */
 .container_ca50b9 {
