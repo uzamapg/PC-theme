@@ -1,4 +1,37 @@
-/* psychopomp#0001 */
+ /* Wide Settings */
+ [class^="sidebarRegion__"] {
+        max-width: 220px;
+        max-height: 100%;
+    }
+    [class^="contentRegion__"] {
+        height: 100%;
+    }
+    [class^="layer__"]:nth-child(2) [class^="sidebar"] {
+        max-width: 200px;
+        padding: 1;
+    }
+    [class^="standardSidebarView__"] {
+        position: static !important;
+        height: 100%;
+    }
+    [class^="contentColumn_"] {
+        max-width: calc(100% - 16px);
+        margin: auto;
+        padding: 2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* psychopomp#0001 *//*
 .sidebarRegion-1VBisG {
   flex: none;
 }
@@ -16,12 +49,12 @@
   width: 100%;
 }
 
-/* Other wide stuff */
+/* Other wide stuff *//*
 .messagesPopoutWrap-3zryHW{
   width: 620px;
 }
 
-/* Topaz width fix? */
+/* Topaz width fix? *//*
 .topaz-settings{
   width: 1150px;
 }
