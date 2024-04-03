@@ -9,42 +9,42 @@
   --scrollbar-auto-track: #141414;
 }
 
- .theme-dark .container-2cd8Mz {background-color: var(--background-secondary);}
- .theme-dark .peopleColumn-1wMU14 {background-color: var(--background-primary);}
- .theme-dark .peopleList-2VBrVI {background-color: var(--background-primary);}
- .theme-dark .embedWrapper-1MtIDg.embedFull-1HGV2S.embed-hKpSrO.markup-eYLPri {background-color: #0a0a0a;}
- .theme-dark .autocomplete-3NRXG8 {background-color: var(--background-floating);}
+ .theme-dark .container_bd15da {background-color: var(--background-secondary);}
+ .theme-dark .peopleColumn__0c784 {background-color: var(--background-primary);}
+ .theme-dark .peopleList_d2f527 {background-color: var(--background-primary);}
+ .theme-dark .embedWrapper__47b23.embedFull__14919.embed_cc6dae.markup_a7e664 {background-color: #0a0a0a;}
+ .theme-dark .autocomplete__743a5 {background-color: var(--background-floating);}
  .theme-dark .selected-3H3-RC {background-color: #0f0f0f;}
- .theme-dark .container-18GwIk {background-color: var(--background-floating);}
- .theme-dark .header-3_zmOb {background-color: var(--background-floating);}
- .theme-dark .header-1w9Q93 {background-color: var(--background-floating);}
- .theme-dark .messagesPopoutWrap-3zryHW {background-color: var(--background-floating);}
- .theme-dark .root-g14mjS {background-color: var(--background-floating);}
- .theme-dark .message-G6O-Wv {background-color: var(--background-floating);}
+ .theme-dark .container_f93da8 {background-color: var(--background-floating);}
+ .theme-dark .header__6d44a {background-color: var(--background-floating);}
+ .theme-dark .header__21b33 {background-color: var(--background-floating);}
+ .theme-dark .messagesPopoutWrap__10dd1 {background-color: var(--background-floating);}
+ .theme-dark .root_a28985 {background-color: var(--background-floating);}
+ .theme-dark .message_ff43e6 {background-color: var(--background-floating);}
  .theme-dark .footer-31IekZ {background-color: var(--background-floating);}
- .modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ {background-color: var(--background-floating);}
- .scrollableContainer-15eg7h{background-color: transparent !important;}
+ .modeSelected__473f1 .wrapper__612a5, .modeSelected__473f1:hover .wrapper__612a5 {background-color: var(--background-floating);}
+ .scrollableContainer_ff917f{background-color: transparent !important;}
 
 
 /* Fix Search Theming */
 .theme-dark {
-.container-2McqkF {background-color: var(--background-floating);}
-.option-ayUoaq:after {background: var(--background-floating);}
+.container__84c26 {background-color: var(--background-floating);}
+.option__91497:after {background: var(--background-floating);}
 .option-2KkUJO .searchOption-351dTI {background-color: var(--background-tertiary);}
 .option-2KkUJO.selected-rZcOL- {background-color: var(--background-tertiary);}
 .option-2KkUJO.selected-rZcOL-:after {width: 0px;}
 .option-2KkUJO::after {background: none;}
-.searchLearnMore-1gNL3A {display: none;}
-.focused-2FU0YH {background-color: var(--background-floating);}
-.wrapper-1ZcZW- {background: #0e0e0e;}
+.searchLearnMore__17e18 {display: none;}
+.focused__68b93 {background-color: var(--background-floating);}
+.wrapper_f5f4c9 {background: #0e0e0e;}
 }
 
 /* Dark Bot Tags */
-.botTagRegular-kpctgU {transition: .5s; background: rgba(30,0,27,0.1); color: #ffffff;}
-.botTagRegular-kpctgU:hover {transition: .5s; background: #444444; color: #ffffff;}
+.botTagRegular_c89c9a {transition: .5s; background: rgba(30,0,27,0.1); color: #ffffff;}
+.botTagRegular_c89c9a:hover {transition: .5s; background: #444444; color: #ffffff;}
 
 /* Forum pages theme fix */
-.theme-dark .themed-Hp1KC_ {background: var(--background-primary);}
+.theme-dark .themed_b152d4 {background: var(--background-primary);}
 .grid-21dB-S>div:first-child, .headerRow-1MKoR-, .list-3FIpnh>div:first-child {background: var(--background-primary);}
-.container-1PloNW {background: var(--background-floating);}
-.container-ZMc96U {background: var(--background-primary);}
+.container__7d004 {background: var(--background-floating);}
+.container__26baa {background: var(--background-primary);}
