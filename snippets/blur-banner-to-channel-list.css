@@ -1,3 +1,12 @@
 /* Server Banner blurs into channel list */
-.animatedContainer-2laTjx{box-shadow: none !important;}
-.animatedContainer-2laTjx:after{background: linear-gradient(00deg, var(--background-secondary) 30%, transparent 100%); position:absolute; content: ''; height:30px; width:100%; bottom: 0;}
+.animatedContainer__0e828{
+	box-shadow: none !important;
+	}
+.animatedContainer__0e828:after{
+	background: linear-gradient(00deg, var(--background-secondary) 30%, transparent 100%); 
+	position:absolute; 
+	content: ''; 
+	height:30px; 
+	width:100%; 
+	bottom: 0;
+	}

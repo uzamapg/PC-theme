@@ -1,7 +1,7 @@
 /* Hide VC Controls till hover */
-.container-1zzFcN>.actionButtons-2vEOUh{display:none;}
-.container-1zzFcN:hover>.actionButtons-2vEOUh{display:flex; animation: slide-up 0.4s ease;}
+.container_e1958d>.actionButtons__85e3c{display:none;}
+.container_e1958d:hover>.actionButtons__85e3c{display:flex; animation: slide-up 0.4s ease;}
 /* Red slash to muted people in VC */
-.voiceUser-3nRK-K>.content-1Tgc42>.icons-2mwuFp svg>path:last-child{fill: #f04747;}
+.voiceUser__629a5>.content__3b07e>.icons__10dd7 svg>path:last-child{fill: #f04747;}
 /* Even-spaced VC Display */
 .voiceUsers-25eR9q {width: 100%; display: flex; justify-content: space-evenly; grid-template-columns: none;}
