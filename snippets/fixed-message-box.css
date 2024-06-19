@@ -1,37 +1,45 @@
-/* Rectangular Message box/ Chat Box */
-/*.channelTextArea_c2094b { margin-bottom: 0; }
-/*.form_d8a4a1 { padding: 0; }
-/*.inner__9fd0b { padding-top: 4px; }
-/*.base__06abc { /* typing and slowmode stuff */top: -24px; /* height is 24px */ background-color: var(--background-primary);}
-/*.scrollableContainer_ff917f {border-radius: 0px; min-height: 53px;}
-/*.scrollableContainer_ff917f{background-color: transparent !important;}
-*/
+:is(main,section)[class^=chatContent] > form,
+form > div[class^=submitContainer] {
+  /* align chatbox */
+  padding: 0px;
+  > div { margin-bottom: 0px; border-radius: 0px; }
+  > div[class^=channelTextArea] {
+    > div { margin: 0px;  }
+    > div > div {
+      padding-top: 4px;
+      min-height: 49px;
+      border-radius: 0px;
+    }
+  }
 
+  /* move slowmode/typing indicator to match */
+  > div[class^=typing] {
+    top: -24px;
+    right: calc(var(--custom-index-scrollbar-margin) * 2 + var(--custom-index-scrollbar-width));
+    margin-left: auto;
+    width: fit-content;
+    padding-left: 2px;
+    padding-right: 9px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--channeltextarea-background);
+  }
+  /* make scrollbar meet chatbox */
+  &::after { display: none; }
 
-/* Match channel text area to user container */
-.form_d8a4a1 {padding: 0;}
-.channelTextArea_c2094b {margin: 0;}
-.scrollableContainer_ff917f {border-radius: 0;}
-.inner__9fd0b {
-  min-height: 48px;
-  padding-top: 4px;
-  background: var(--background-primary);
+  /* fix replies */
+  > div > div > div[class^=attachedBars] {
+    min-height: unset !important;
+    padding-bottom: 4px;
+  }
 }
-/* Move typing indicators */
-.typing__6fd1d {
-  top: -24px;
-  left: 0px;
-  width: fit-content;
-  padding-right: 9px;
-  border-radius: 0 8px 0 0;
-  background: var(--background-floating);
-}
-/* Remove single pixel padding from user container */
-.container_debb33 {
-  margin: 0;
-}
-/* End Match channel text area to user container */
 
-.themedBackground__3a4c0 {
-	background: var(--background-primary);
+/* jump to present */
+div[class^=jumpToPresentBar] {
+  left: 0; right: unset;
+  border-radius: 0px 8px 0px 0px;
+  background-color: var(--channeltextarea-background);
+  > button[class^=barButtonMain] {
+    flex: 0 0 auto;
+    display: none;
+  }
 }
