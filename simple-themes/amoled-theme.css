@@ -9,34 +9,34 @@
   --scrollbar-auto-track: #141414;
 }
 
- .theme-dark .container_bd15da {background-color: var(--background-secondary);}
- .theme-dark .peopleColumn__0c784 {background-color: var(--background-primary);}
- .theme-dark .peopleList_d2f527 {background-color: var(--background-primary);}
- .theme-dark .embedWrapper__47b23.embedFull__14919.embed_cc6dae.markup_a7e664 {background-color: #0a0a0a;}
- .theme-dark .autocomplete__743a5 {background-color: var(--background-floating);}
+ .theme-dark .container_c2739c {background-color: var(--background-secondary);}
+ .theme-dark .peopleColumn_c2739c {background-color: var(--background-primary);}
+ .theme-dark .peopleList_e0840f {background-color: var(--background-primary);}
+ .theme-dark .embedWrapper_b558d0.embedFull_ad0b71.embed_ad0b71.markup_d6076c {background-color: #0a0a0a;}
+ .theme-dark .autocomplete_f23da8 {background-color: var(--background-floating);}
  .theme-dark .selected-3H3-RC {background-color: #0f0f0f;}
- .theme-dark .container_f93da8 {background-color: var(--background-floating);}
- .theme-dark .header__6d44a {background-color: var(--background-floating);}
- .theme-dark .header__21b33 {background-color: var(--background-floating);}
- .theme-dark .messagesPopoutWrap__10dd1 {background-color: var(--background-floating);}
- .theme-dark .root_a28985 {background-color: var(--background-floating);}
- .theme-dark .message_ff43e6 {background-color: var(--background-floating);}
+ .theme-dark .container_e664f3 {background-color: var(--background-floating);}
+ .theme-dark .header_e664f3 {background-color: var(--background-floating);}
+ .theme-dark .header_ac90a2 {background-color: var(--background-floating);}
+ .theme-dark .messagesPopoutWrap_ac90a2 {background-color: var(--background-floating);}
+ .theme-dark .root_f9a4c9 {background-color: var(--background-floating);}
+ .theme-dark .message_ddcc45 {background-color: var(--background-floating);}
  .theme-dark .footer-31IekZ {background-color: var(--background-floating);}
- .modeSelected__473f1 .wrapper__612a5, .modeSelected__473f1:hover .wrapper__612a5 {background-color: var(--background-floating);}
- .scrollableContainer_ff917f{background-color: transparent !important;}
+ .modeSelected_d8bfb3 .wrapper_d8bfb3, .modeSelected_d8bfb3:hover .wrapper_d8bfb3 {background-color: var(--background-floating);}
+ .scrollableContainer_d0696b{background-color: transparent !important;}
 
 
 /* Fix Search Theming */
 .theme-dark {
-.container__84c26 {background-color: var(--background-floating);}
-.option__91497:after {background: var(--background-floating);}
+.container_eedf95 {background-color: var(--background-floating);}
+.option_b0286e:after {background: var(--background-floating);}
 .option-2KkUJO .searchOption-351dTI {background-color: var(--background-tertiary);}
 .option-2KkUJO.selected-rZcOL- {background-color: var(--background-tertiary);}
 .option-2KkUJO.selected-rZcOL-:after {width: 0px;}
 .option-2KkUJO::after {background: none;}
-.searchLearnMore__17e18 {display: none;}
-.focused__68b93 {background-color: var(--background-floating);}
-.wrapper_f5f4c9 {background: #0e0e0e;}
+.searchLearnMore_b0286e {display: none;}
+.focused_eedf95 {background-color: var(--background-floating);}
+.wrapper_d4fa29 {background: #0e0e0e;}
 }
 
 /* Dark Bot Tags */
@@ -44,7 +44,7 @@
 .botTagRegular_c89c9a:hover {transition: .5s; background: #444444; color: #ffffff;}
 
 /* Forum pages theme fix */
-.theme-dark .themed_b152d4 {background: var(--background-primary);}
+.theme-dark .themed_e44302 {background: var(--background-primary);}
 .grid-21dB-S>div:first-child, .headerRow-1MKoR-, .list-3FIpnh>div:first-child {background: var(--background-primary);}
-.container__7d004 {background: var(--background-floating);}
-.container__26baa {background: var(--background-primary);}
+.container_a57509 {background: var(--background-floating);}
+.container_e44302 {background: var(--background-primary);}

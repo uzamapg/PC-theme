@@ -1,6 +1,6 @@
 /* Modern / Cozier Replies */
-.compact_eda3c8 {--reply-message-margin: 10px;}
-.repliedMessage__636d2 {background-color: var(--background-secondary); border-radius: 5px; padding: 5px 10px; transition: 300ms background-color; width: min-content; max-width: 800px;}
-.repliedMessage__636d2:hover {background-color: var(--background-modifier-hover);}
-.repliedMessage__636d2:active {background-color: var(--background-modifier-active);}
-.repliedMessage__636d2::before {margin-right: var(--reply-message-margin);}
+.compact_ec86aa {--reply-message-margin: 10px;}
+.repliedMessage_ec86aa {background-color: var(--background-secondary); border-radius: 5px; padding: 5px 10px; transition: 300ms background-color; width: min-content; max-width: 800px;}
+.repliedMessage_ec86aa:hover {background-color: var(--background-modifier-hover);}
+.repliedMessage_ec86aa:active {background-color: var(--background-modifier-active);}
+.repliedMessage_ec86aa::before {margin-right: var(--reply-message-margin);}

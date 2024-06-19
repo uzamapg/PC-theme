@@ -4,26 +4,26 @@
 //*[data-item-id="Gift Inventory"] {display: none !important;}
 //*[data-item-id="Billing"] {display: none !important;}
 *//
-.button__581d0[aria-label='Send a gift'] {display: none !important;}
+.button_dd4f85[aria-label='Send a gift'] {display: none !important;}
 #guild-header-popout-premium-subscribe {display: none;}
 [href="/store"], [aria-controls="Discord Nitro-tab"],[aria-controls="Billing-tab"],[aria-controls="nitro-server-oost-tab"],
 #guild-header-popout > div > .separator-1So4YB:nth-child(2),.shinyButton_d5e126,
-.emojiSection_ab054b > .flex_f18b02 > .size14-3fJ-ot,.emojiSection_ab054b > .flex_f18b02 > .flex_f18b02 > .size14-3fJ-ot,
+.emojiSection_e58351 > .flex_bba380 > .size14-3fJ-ot,.emojiSection_e58351 > .flex_bba380 > .flex_bba380 > .size14-3fJ-ot,
 .emptyStateSubtext-1nMe5m, .content-374sTA, .wrapper-1hrFc0, .wrapper-3nSjSv, .divider-Uf0Wob,
 .perksModalContentWrapper-2HU6uL > .content-2qfHzC:nth-child(3),.guildsBlurb-1fFvov,.marketingHeader-27aoGA,
 .content-11k50x > div:not(.marketingLogo-pyU32f), .content-11k50x > h3,.subscribeTooltipWrapper-3ipXtC,
-.headerBlurb-1GxBrq,.giftAction-yhDLaW,.tierMarkerLabelContainer-1bRYay, .upsell__54a69,
-.premiumPromo__9e1ca,.stickerShopIconWrapper-2SZmQ6,.selectorButtonPremiumRequired-2pGGEj,.premiumUpsell_aae531 { display: none;}
-.emojiSection_ab054b > .flex_f18b02, .popoutContainer__66068 > .flex_f18b02 { flex-direction: column; align-items: center;}
-.emojiSection_ab054b > .flex_f18b02 > .flex_f18b02,
-.popoutContainer__66068 > .flex_f18b02 > .flex_f18b02 { margin-left: 0px; }
-.primaryEmoji_cb1dd8 { margin: 0px 0px 12px 0; }
-.popoutContainer__66068 { width: auto; }
+.headerBlurb-1GxBrq,.giftAction-yhDLaW,.tierMarkerLabelContainer-1bRYay, .upsell_b82429,
+.premiumPromo_ca9b56,.stickerShopIconWrapper-2SZmQ6,.selectorButtonPremiumRequired-2pGGEj,.premiumUpsell_aae531 { display: none;}
+.emojiSection_e58351 > .flex_bba380, .popoutContainer_cf58b5 > .flex_bba380 { flex-direction: column; align-items: center;}
+.emojiSection_e58351 > .flex_bba380 > .flex_bba380,
+.popoutContainer_cf58b5 > .flex_bba380 > .flex_bba380 { margin-left: 0px; }
+.primaryEmoji_e58351 { margin: 0px 0px 12px 0; }
+.popoutContainer_cf58b5 { width: auto; }
 .ctaBar-2UsjF2 { margin: auto;}
-.wrapper_c76288 > .header__643ce > .wrapper-22ayhK { padding-right: 0;}
+.wrapper_d8cdac > .header_d8cdac > .wrapper-22ayhK { padding-right: 0;}
 .settingsGroup-1Zsrah .item-3T2z1R:nth-child(2) { border-radius: 0 3px 3px 0;}
 .button[aria-label="Send a gift or Boost this server"] {display: none;}
-.root-5HCxlS root_a28985 .fullscreenOnMobile__05784 {display: none;}
+.root-5HCxlS root_f9a4c9 .fullscreenOnMobile_f9a4c9 {display: none;}
 
 [aria-label="Nitro"] {display: none;}
 [aria-label="Subscriptions"] {display: none;}

@@ -1,24 +1,24 @@
-.search_ac353c:not(.open_d3ab4e) > .searchBar__5a20a {
+.search_a46bef:not(.open_a46bef) > .searchBar_a46bef {
     width: 22px;
     background: transparent;
 }
 
-.searchBarComponent__8f95f{
+.searchBarComponent_f0963d{
     background: transparent;
 }
 
-.search_ac353c:not(.open_d3ab4e) .iconLayout__9d9a4 {
+.search_a46bef:not(.open_a46bef) .iconLayout_effbe2 {
     cursor: pointer;
 }
 
-.search_ac353c:not(.open_d3ab4e) .iconContainer__9f124 {
+.search_a46bef:not(.open_a46bef) .iconContainer_effbe2 {
     transform: scale(1.4);
 }
 
-.search_ac353c:not(.open_d3ab4e) .icon__5c8c7 {
+.search_a46bef:not(.open_a46bef) .icon_effbe2 {
     color: var(--interactive-normal);
 }
 
-.search_ac353c:not(.open_d3ab4e):hover .icon__5c8c7 {
+.search_a46bef:not(.open_a46bef):hover .icon_effbe2 {
     color: var(--interactive-active);
 }

@@ -1,10 +1,10 @@
 /* Compact Reactions */
-.reaction_ef7e09{width: 27px;}
+.reaction_f61c73{width: 27px;}
 .reactionInner-9eVHJa{width: 34px; display: grid; justify-content: center; align-items: flex-start; grid-template-columns: 37px 0px;}
-.reaction_ef7e09 .emoji{margin-right: -1px; transform: scale(0.96);}
+.reaction_f61c73 .emoji{margin-right: -1px; transform: scale(0.96);}
 .reactionCount-1zkLcN {font-size: 11px; margin-top: -7px; margin-left: -29px; width: 0px; background-color: rgba(130, 164, 238, 0.219); z-index: 5; transition: 0.5s; border-radius: 1000px;}
 .reactionCount-1zkLcN[style="min-width: 9px;"]{margin-left: -24px;}
 .reactionCount-1zkLcN[style="min-width: 18px;"]{font-size: 11px;}
 .reactionCount-1zkLcN:is([style="min-width: 27px;"], [style="min-width: 36px;"]){margin-left: -35px;}
-.reactionMe__9fc5c .reactionCount-1zkLcN{background-color: var(--brand-experiment-45a);}
+.reactionMe_f61c73 .reactionCount-1zkLcN{background-color: var(--brand-experiment-45a);}
 .reactionCount-1zkLcN[style="position: relative; overflow: hidden;"]{width: 30px;}

@@ -1,17 +1,17 @@
 /* HIDE STUFF */
-.powercord-spotify .flex_f18b02 {display: none;}
-.buttons__7ecff {opacity: 0; transition: opacity 0.1s;}
-.channelTextArea_c2094b:hover .buttons__7ecff {opacity: 1.0;}
+.powercord-spotify .flex_bba380 {display: none;}
+.buttons_d0696b {opacity: 0; transition: opacity 0.1s;}
+.channelTextArea_a7d72e:hover .buttons_d0696b {opacity: 1.0;}
 .container-16j22k {display: none;}
-.container_debb33{background-color: var(--background-secondary);}
-.isUnread_de09f5 {border-color:transparent !important;}
+.container_b2ca13{background-color: var(--background-secondary);}
+.isUnread_fc5f50 {border-color:transparent !important;}
 .anchor-1MIwyf[href="https://support.discord.com"] { display: none; }
-.threadSuggestionBar__717a3 { display: none; }
+.threadSuggestionBar_b11c5e { display: none; }
   /*- User-popout -*/
 .note-1MiCN7 textarea, .note-Go5ZP2 textarea, .note-3M15gE, .userInfoSectionHeader-2mYYun:last-of-type {display: none;}
 .bodyInnerWrapper-2bQs1k>h3:nth-of-type(2) {display: none;}
 .divider-1wtgZ3 {display: none;}
 .footer-k0JFJ6 {display: none;}
   /*- Settings -*/
-.socialLinks_dbdd6f {display: none;}
+.socialLinks_c44e94 {display: none;}
 .developerPortalCtaWrapper-2XNafh {display: none;}

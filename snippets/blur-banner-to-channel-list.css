@@ -1,8 +1,8 @@
 /* Server Banner blurs into channel list */
-.animatedContainer__0e828{
+.animatedContainer_fd6364{
 	box-shadow: none !important;
 	}
-.animatedContainer__0e828:after{
+.animatedContainer_fd6364:after{
 	background: linear-gradient(00deg, var(--background-secondary) 30%, transparent 100%); 
 	position:absolute; 
 	content: ''; 

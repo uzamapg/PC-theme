@@ -1,7 +1,7 @@
 /* FIXES (Probably) */
-.scroller_de945b {contain: unset;}
+.scroller_fea3ef {contain: unset;}
 .wrapper-28eC3z svg {overflow: hidden;}
-.guildSection__15ac6 > .flex_f18b02 > svg {flex-shrink: 0;}
+.guildSection_e58351 > .flex_bba380 > svg {flex-shrink: 0;}
 .badgeList-2aoHPw {padding-right: 0; padding-left: 80px;}
   /*- font fix -*/
 body {--font-display: var(--font-primary);}
@@ -10,7 +10,7 @@ body {--font-display: var(--font-primary);}
 /*- Images going over top new message bar fix -*/
 #app-mount [id^="message-accessories"] { z-index: 0; }
 /* Server list bg to bg-scnd */
-.scroller_de945b {background-color: var(--background-secondary);}
+.scroller_fea3ef {background-color: var(--background-secondary);}
 /* Don't truncate About Me to six lines */
 .clamped-2ZePhX {-webkit-line-clamp: unset;}
 
