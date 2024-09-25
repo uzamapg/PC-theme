@@ -74,6 +74,10 @@
     justify-content: flex-end;
 }
 
+/* Temp /shit fix for My Account PFP not aligning*/
+.wrapper_c51b4e, .avatar_b69b77{
+    padding-top: 148px;
+}
 
 
 

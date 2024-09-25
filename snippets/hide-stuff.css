@@ -15,3 +15,7 @@
   /*- Settings -*/
 .socialLinks_c44e94 {display: none;}
 .developerPortalCtaWrapper-2XNafh {display: none;}
+
+[class*=channelAppLauncher_] {
+  display: none;
+}

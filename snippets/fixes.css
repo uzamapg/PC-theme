@@ -14,7 +14,7 @@ body {--font-display: var(--font-primary);}
 /* Don't truncate About Me to six lines */
 .clamped-2ZePhX {-webkit-line-clamp: unset;}
 
-/* Fix PC stuff order in settings */
+/* Fix PC stuff order in settings *//*
 .side-2ur1Qk> div[data-item-id="pc-updater"],
 .side-2ur1Qk> div[data-item-id="pc-updater"] ~ div { order: 6 }
 
@@ -26,4 +26,4 @@ body {--font-display: var(--font-primary);}
 .item-3XjbnG[data-item-id="pc-updater"] {
     align-items: unset !important;
     overflow: visible;
-}
+}*/

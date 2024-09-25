@@ -37,4 +37,9 @@
 
 
 [data-tab-id="Nitro Server Boost"] {display: none;};
-[data-tab-id="Billing"] {display: none;};
+
+[class^=item_][data-tab-id="Billing"],
+
+[class^=item_][data-tab-id="Billing"] + [class^=separator_] {
+  display: none !important;
+}

@@ -1,0 +1,482 @@
+/* [class^=shinyButton_] {display: none;} */
+/*
+ * @name Hide Nitro Upselling
+ * @description Hide all Nitro upselling in any language
+ * @author tom2k
+ * @version 2.3.2
+*/
+/* customization */
+:root {
+    /* do you want to see your quests/billing/nitro settings? */
+    /* yes, I want to see it -> --billing: block !important; */
+    /* no, hide it -> --billing: none; */
+    --billing: none;
+    /* do you want to see server boosting/server shop upsell? */
+    /* yes, I want to see it -> --boosting: block !important; */
+    /* no, hide it -> --boosting: none; */
+    --boosting: none;
+}
+
+/* GENERAL HIDE */
+/* nitro & shop buttons above DM list (more space efficient) - #1 */
+[data-list-id^=private-channels] > ul > li:has([href="/store"],[href="/shop"]),
+/* nitro button (in case it's anywhere else) */
+[href="/store"],
+/* shop button (in case it's anywhere else) */
+[href="/shop"],
+/* nitro button - #2  */
+[class^=shinyButton_]:has(> [class*=premiumSubscribeButton_]),
+/* nitro upselling in server boosting screen - #3 */
+[class^=guildStatus_] > [class^=guildBoostCtas_] > [class^=guildBoostCta_][class*=guildBoostCtaSecondary_],
+/* nitro icon in stream quality - #4 */
+[class^=streamQualityIndicator_] [class^=premiumStreamIcon_],
+/* random side popup theme upsell - #5 */
+#app-mount > [class^=appAsidePanelWrapper_] > [class^=themeEditor_]:has([class^=shinyButton_]) {
+    display: none;
+}
+
+/* disable hovering tooltip on nitro icon in stream quality - #6 */
+[class^=streamQualityIndicator_]:has([class^=premiumStreamIcon_]),
+/* disable clicking on anything that redirects to nitro page (e.g. nitro badge) */
+[href="https://discord.com/settings/premium"]:active {
+  pointer-events: none;
+}
+
+/* settings */
+[class^=standardSidebarView_] {
+    /* tabs */
+    > [class^=sidebarRegion_] > [class^=sidebarRegionScroller_] > nav > [class^=side_] {
+        /* billing settings tabs - #7 */
+        /* header */
+        > [class^=header_]:has(+ [class^=premiumTab_]),
+        /* nitro */
+        > [class^=premiumTab_],
+        /* subscriptions */
+        > [data-tab-id="Subscriptions"],
+        /* gift inventory/quests */
+        > [data-tab-id="Library Inventory"],
+        /* billing */
+        > [data-tab-id="Billing"],
+        /* following separator */
+        > [data-tab-id="Billing"] + [class^=separator_] {
+            display: var(--billing);
+        }
+        /* user settings boost tab */
+        > [data-tab-id="Nitro Server Boost"] {
+            display: var(--boosting);
+        }
+        /* user settings merch */
+        > [data-tab-id="merchandise"] {
+            display: none;
+        }
+        /* server settings tabs - #8 */
+        /* boost status tab */
+        > [class^=serverBoostTabItem_] {
+            display: var(--boosting);
+            + [class^=separator_] {
+                display: var(--boosting);
+            }
+        }
+        /* subscriptions tab */
+        > [data-tab-id=ROLE_SUBSCRIPTIONS] {
+            display: var(--boosting);
+            [class^=sidebar_] [class^=header_]:has(+ &),
+            + [class^=separator_] {
+                display: var(--boosting);
+            }
+        }
+    }
+    /* profiles tab */
+    #profile-customization-tab {
+        /* "Try Out Nitro!" section - #9 */
+        > [class^=premiumFeatureBorder],
+        [class^=limitedFeatureBorder],
+        /* unique server profiles overlay - #10 */
+        [class^=upsellOverlayContainer_],
+        /* shop upselling - #11 */
+        > [class^=container_][style^=background-image] {
+            display: none;
+        }
+        [class^=profileCustomizationSection_] [class^=customizationSection_] {
+            &[class*=withDivider_]:has(> [class^=buttonsContainer_]) {
+                /* avatar decorations - #12 */
+                + [class^=customizationSection_],
+                /* profile effects - #12 */
+                + [class^=customizationSection_] + [class^=customizationSection_] {
+                    display: none;
+                }
+            }
+            /* disable clicking on server specific avatar when not unlocked - #13 */
+            [class^=avatar_][class*=clickable_]:has(path[d^="M7 4a1 1 0 0 0 0 2h3a1"]) {
+                pointer-events: none;
+                /* prevent clicking through status icon */
+                rect {
+                    pointer-events: none;
+                }
+            }
+            /* disable clicking on banner when not unlocked - #14 */
+            [class^=banner_] > [class^=clickable_]:has(path[d^="M7 4a1 1 0 0 0 0 2h3a1"]) {
+                pointer-events: none;
+            }
+        }
+    }
+    /* appearance tab */
+    #appearance-tab {
+        /* customize color background section - #15 */
+        [class^=premiumFeatureBorder_],
+        /* custom icon section - #16 */
+        [class^=selectionGroup_]:has([class^=nitroWheel_]) {
+            display: none;
+        }
+    }
+    /* entrance sounds in voice & video settings - #17 */
+    [id="voice-&-video-tab"] [class^=divider_][class*=callSoundsDivider_] ~ [class] {
+    display: none !important;
+    }
+    /* server settings */
+    /* overview tab boosting upsell - #18 */
+    #overview-tab [class^=divider_] [class^=divider_]:has([class^=shinyButton_]),
+    /* hide role icon section in roles tab when unavailable - #19 */
+    #roles-tab [class^=contentWidth_] > [class^=container_]:has([class^=availabilityIndicator_] > [class^=icon_]:not([class*=unlockedIcon_])) {
+        display: var(--boosting);
+    }
+    #emoji-tab,
+    #stickers-tab,
+    #soundboard-tab {
+        /* boost upsell banner - #20 */
+        [class^=banner_]:has([class^=shinyButton_]),
+        /* large boost upsell banner (brand new server) - #21 */
+        [class^=upsellContainer_] {
+            display: var(--boosting);
+        }
+    }
+    #stickers-tab,
+    #vanity_url-tab {
+        /* boosting button - #22 */
+        [class^=shinyButton_] {
+            display: var(--boosting);
+        }
+    }
+    #roles-tab,
+    #vanity_url-tab {
+        /* level requirement indicator - #23 */
+        [class^=availabilityIndicator_] {
+            /* hide boost icon */
+            > [class^=icon_] {
+                display: var(--boosting);
+            }
+            /* add margin so text is centered */
+            > h2 {
+                margin-left: 4px;
+            }
+            /* disable clicking level indicator */
+            [class^=clickable_]:has(> &) {
+                pointer-events: var(--boosting);
+            }
+        }
+    }
+    /* stickers tab boosting upsell - #24 */
+    #stickers-tab {
+        /* number of boosts description */
+        [class^=tierDefaultUnlocked_],
+        /* locked tiers */
+        [class^=tier_]:has(> [class^=tierHeaderLocked_]),
+        /* progress bar */
+        [class^=progress_][class*=progressBar_] {
+            display: var(--boosting);
+        }
+    }
+    /* nitro upsell in server settings boost status tab - #25 */
+    #guild_premium-tab > [class^=tier0Container_] {
+        display: none;
+    }
+}
+/* billing settings right click entry - #26 */
+/* nitro */
+#user-settings-cog-Discord_Nitro,
+/* subscriptions */
+#user-settings-cog-Subscriptions,
+/* gift inventory/quests */
+#user-settings-cog-Library_Inventory,
+/* billing */
+#user-settings-cog-Billing {
+    display: var(--billing);
+}
+/* merch */
+#user-settings-cog-merchandise {
+    display: none;
+}
+
+/* boosting */
+/* boost progress bar - #27 */
+#channels > ul > li:has(> [data-list-item-id^=channels___boosts]),
+/* server shop - #28 */
+#channels > ul > li:has(> [class^=containerDefault_] > [id^=shop]),
+/* booster badge in memberlist - #29 */
+[class^=membersWrap_] [class^=premiumIcon],
+/* right click entry to user settings boost tab - #26 */
+#user-settings-cog-Nitro_Server_Boost,
+/* boost button on clicking server header - #30 */
+#guild-header-popout-premium-subscribe,
+/* ^ following separator - #30 */
+#guild-header-popout div:has(> #guild-header-popout-premium-subscribe) + [class^=separator_],
+/* context menu for subscriptions tab - #31 */
+#guild-context-guild-settings--ROLE_SUBSCRIPTIONS,
+/* context menu for boost status tab in server settings - #31 */
+#guild-context-guild-settings--GUILD_PREMIUM {
+    display: var(--boosting);
+}
+/* disable clicking on server boost status icon in server header - #32 */
+[class^=header_] [class^=guildIcon]:active {
+  pointer-events: var(--boosting);
+}
+
+/* emoji picker */
+#emoji-picker-tab-panel {
+    /* hide react with nitro emojis in vc upsell - #33 */
+    [class^=tooltipContainer_]:has(> #fancybutton-toggle),
+    /* hide super reactions toggle - #34 */
+    > [class^=header_] > [class^=burstToggle_] {
+        display: none;
+    }
+    #emoji-picker-grid {
+        /* nitro dividers - #35 */
+        [class^=categorySection_][class*=categorySectionNitroDivider] {
+            > [class^=nitroTopDividerContainer_],
+            > [class^=nitroBottomDivider_] {
+                display: none;
+            }
+        }
+        /* nitro locked section - #35 */
+        [class^=categorySection_][class*=categorySectionNitroLocked] {
+            /* make nitro needed emojis b&w */
+            filter: grayscale();
+            background-color: transparent;
+            /* server headers */
+            [class^=header_] {
+                /* hide nitro icon */
+                [class^=headerIcon_]:has(> svg > path) {
+                    display: none;
+                    /* remove gap */
+                    + [class^=headerLabel_] {
+                        margin: 0;
+                    }
+                }
+                /* change server names and "Available with Nitro" headers to "Unavailable" */
+                [class^=headerLabel_] {
+                    font-size: 0;
+                    &::before {
+                        font-size: 12px;
+                        content: "Unavailable";
+                    }
+                }
+            }
+            /* disable clicking on unavailable emojis */
+            [class^=emojiListRow_] {
+                pointer-events: none;
+            }
+            /* make unavailable emojis have matching styles */
+            [class^=lockedEmoji_] {
+                background: hsl(var(--black-500-hsl)/.6);
+                filter: brightness(50%);
+            }
+            /* hide nitro needed emojis in search results */
+            #emoji-picker-tab-panel #emoji-picker-grid [class^=listItems_][style="inset: 8px 0px;"] > & {
+                display: none;
+            }
+        }
+        /* disable clicking on unavailable emojis and make them b&w */
+        [class^=emojiListRow_] [class^=emojiItem_]:has([class^=emojiLockIconContainer_]) {
+            pointer-events: none;
+            background-color: transparent;
+            filter: grayscale();
+        }
+        /* nitro upsell warning  */
+        [class^=upsellContainer_] {
+            display: none;
+        }
+    }
+    > [class^=wrapper_] > [class^=scroller_] {
+        /* disable scrolling on the server shortcuts */
+        &:has(> [class^=listItems_] [class^=categoryItemLockIconContainer_]) {
+            overflow-y: hidden !important;
+        }
+        /* hide unavailable emoji server shortcuts - #35 */
+        > [class^=listItems_] > div:has([class^=categoryItemLockIconContainer_]) {
+            display: none;
+        }
+    }
+}
+
+/* sticker picker - #35 */
+#sticker-picker-tab-panel > #sticker-picker-grid {
+    [class^=stickerNode_][class*=stickerUnsendable_] {
+        [class^=wrapper_]:has(+ [class^=row_] [class^=sticker_] &) [class^=header_] {
+            filter: grayscale();
+            /* change server names and "Available with Nitro" headers to "Unavailable" */
+            [class^=headerLabel_] {
+                font-size: 0;
+                &::before {
+                    font-size: 12px;
+                    content: "Unavailable";
+                }
+            }
+        }
+        /* unavailable stickers */
+        #sticker-picker-tab-panel>#sticker-picker-grid [class^=sticker_]:has(&) {
+            pointer-events: none;
+            background: hsl(var(--black-500-hsl)/.6);
+            filter: brightness(50%);
+        }
+    }
+}
+
+/* popouts */
+[id^=popout_] {
+    /* change avatar decoration option when clicking pfp in profiles tab - #36 */
+    #user-settings-change-avatar-change-avatar-decoration,
+    /* super reaction hover tooltip upsell - #37 */
+    [class^=reactionTooltip_] > [class^=burstReactionTooltipPrompt] {
+        display: none;
+    }
+    /* nitro upselling description in popup when clicking on emoji/sticker - #38 */
+    [class^=popoutContainer_] > [class^=emojiSection_] [data-text-variant="text-sm/normal"] {
+        font-size: 0;
+        /* when not from a public server, keep part of the description */
+        &:has(> a)::after {
+            content: "This emoji is from a server that is either invite-only or unavailable.";
+            font-size: 14px;
+        }
+    }
+    /* soundboard */
+    [class^=picker_][role=dialog] {
+        /* nitro upsell container - #39 */
+        > [class^=gridNoticeWrapper_]:has(> [class^=premiumFeatureBorder_]) {
+            display: none;
+        }
+        /* sounds */
+        > [class^=listWrapper_] > [class^=wrapper_] > [class^=scroller_] > [class^=listItems_] {
+            /* server header with disabled sounds */
+            > [class^=sectionContainer_]:has(+ ul > li > [class^=soundButton_][class*=premiumDisabled_]) {
+                filter: grayscale();
+                /* change unavailable server names to "Unavailable"  */
+                > [class^=sectionHeader_] > [class^=sectionHeaderContent_] > h1 {
+                    font-size: 0;
+                    &::before {
+                        content: "Unavailable";
+                        font-size: 12px;
+                    }
+                }
+            }
+            /* prevent clicking on unavailable sounds */
+            > ul > li:has(> [class^=soundButton_][class*=premiumDisabled_]) {
+                filter: grayscale();
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+/* chat input */
+[class^=channelTextArea_] {
+    /* gift button - #40 */
+    [class^=buttons_] > button,
+    /* "Send longer messages with Discord Nitro!" - #41 */ 
+    > [class^=characterCount_] [class*=upsell_] {
+        display: none;
+    }
+}
+
+/* chat */
+[data-list-id=chat-messages] {
+    /* super reactions - #42 */
+    [class^=reaction_] > [class^=reactionInner_]:has(> [class^=burstGlow_]) {
+        pointer-events: none;
+        /* glow effect */
+        > [class^=burstGlow_],
+        /* hide animation effect */
+        [class^=effectsWrapper_] {
+            display: none;
+        }
+        /* don't hide super reaction emoji when the animation effect would be happening */
+        .emoji[class*=hideEmoji_] {
+            opacity: 1;
+        }
+    }
+}
+
+/* dialog popups */
+[class^=focusLock_][role=dialog] > [class^=root_] {
+    /* text */
+    > [class^=content_] {
+        > [class^=defaultColor_] {
+            /* paragraphs with a link, likely to the nitro page (long message length upselling description - #43, 100 server limit upselling description - #44) */
+            > p:has(> a,> [class^=learnMoreLink_]),
+            /* large file upload upselling description - #45 */
+            > [class^=body_] > [class^=defaultColor_] {
+                display: none;
+            }
+        }
+        /* remove gif option from avatar upload popup in profile settings - #46 */
+        [class^=imagePickerContainer_] > [class^=optionBox_]:has([class^=nitroWheel]) {
+            display: none;
+        }
+    }
+    /* nuke huge upsell popup on login - #47 */
+    &:has([class^=shinyButton_]) {
+        /* restyle background */
+        background: var(--background-primary);
+        /* restyle close button */
+        > button[class^=closeButton_] {
+            opacity: 1;
+            > [class^=contents_] {
+                height: 24px;
+                zoom: 112.5%;
+            }
+        }
+        /* hide most of the upsell */
+        > svg,
+        > [class^=modalTopPill][class*=freeTrial] {
+            display: none;
+        }
+    }
+    > [class^=content_]:has(> [class^=shinyButton_]) {
+        > h2[class^=defaultColor_][class*=subHeader_] > a,
+        > [class] {
+            display: none;
+        }
+        /* replace sub header with informative text */
+        > h2[class^=defaultColor_][class*=subHeader_] {
+            visibility: hidden;
+            display: flex !important;
+            align-items: center;
+            &::after {
+                visibility: visible !important;
+                content: "There was previously a Nitro advertisement here. Move along.";
+                position: absolute;
+                top: 42.5%;
+            }
+        }
+    }
+/* "you could be paying less!" in server boost payment modal */
+    > .paymentModalContent [class^=upsellFooter_] {
+        display: none;
+    }
+}
+
+/* UNABLE TO TEST ATM */
+/* Birthday avatar decoration upselling */
+/* [class^=birthdayFeatureBorder], */
+/* Halloween avatar decoration upselling */
+/* [class^=container]:has([class^=falloweenArtContainer_]), */
+/* Christmas gifting button */
+/* [class*=sansAttachButton] > [class^=buttons] > [class^=container], */
+/* Snowsgiving bs */
+/* a[href*="/snowsgiving"] {
+    display: none;
+} */
+/* idk where this is */
+/* uspell on role badge click */
+/* [id^=popout_] button:has([class^=boosterBadge_]) {
+  display: none;
+} */
