@@ -1,22 +1,24 @@
-:root:has(#thread-context, #channel-context, #guild-context, #guild-browse-channels-context-menu, #audio-device-context, #user-settings-cog, #account),
-:root:has([class^="privateChannels_"]):has(#user-context),
-:root:has(:is([class^="sidebar_"], [class*="guilds_"]):is(:hover, :focus-within)) {
-    --visiblechannellist-width: 240px;
+/* Hide left sidebar */
+div[class^=base] > div[class^=content] > div[class^=sidebar] {
+    transition: width 0.2s ease 0.1s, opacity 0.2s ease 0.1s;
+    opacity: 0;
+    width: 10px!important;
+}
+/* Show left sidebar when hovered */
+div[class^=base] > div[class^=content] > div[class^=sidebar]:hover {
+    width: 240px!important;
+	opacity: 1;
 }
 
-.sidebar_a4d4d9 {
-    width: var(--visiblechannellist-width, 0);
-    transition: width .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+/*Hover Servers */
+[class*=" guilds"] {
+    width: 10px;
+    transition: width 0.2s ease 0.1s, opacity 0.2s ease 0.1s;
+    opacity: 0;
 }
 
-.sidebar_a4d4d9 .container_ee69e0 {
-    width: 240px;
-}
-
-[class*=guilds_] {
-    transition: width 0.5s ease, padding 0.5s ease;
-  &:not(:hover) {
-    padding-left: 30px;
-    width: 0px;
-  }
+[class*=" guilds"]:hover {
+    width: 65px;
+    opacity: 1;
 }
